@@ -690,7 +690,9 @@ def isatomlist(elems):
     return True
 
 
-def isatom(p): return type(p) == int or type(p) == float or type(p) == str or type(p) == unicode
+def isatom(p): return type(p) == int or type(p) == float or type(p) == str
+
+# or type(p) == unicode
 
 
 def isplainobj(p): return type(p) != types.FrameType and \
